@@ -24,8 +24,24 @@ We believe that, by analyzing and improving the Java 6 Enterprise Edition, we wo
 ## Risk List
 
 ## Project Methodology
+To maintain successful and keep on track with the project timeline we are going to use mercurial version control system to work together, the development will remain synchronized with everyone participating in the development process. At each stage of the process there will be peer to peer code reviews and tests on everyone’s machines to make sure the output matches and no anomalies exists.
+
+For this project we are going to follow the methodology:
+Write a code and analyze heap at certain periods during execution. Snapshots during different times for testing and comparing the results of the development. 
 
 ## Necessary Resources
+For this project we are going to use the following open resources:
+
+Eclipse: The Eclipse Memory Analyzer is a fast and feature-rich Java heap analyzer that helps you find memory leaks and reduce memory consumption.
+
+NetBeans: NetBeans profiler is a fully featured Java profiling tool integrated into the NetBeans IDE. The features include CPU, memory, threads, locks and SQL queries profiling as well as basic JVM monitoring, allowing developers to be more productive in solving performance and memory issues.
+
+VisualVM: The VisualVM monitors and troubleshoots applications running on Java 1.4+ from many vendors using various technologies including jvmstat, JMX, Serviceability Agent (SA) and Attach API. VisualVM perfectly fits all the requirements of application developers, system administrators, quality engineers and end users.
+HeapAnalyzer: HeapAnalyzer allows the finding of a possible Java heap leak area through its heuristic search engine and analysis of the Java heap dump in Java applications.
+
+ntelliJ IDEA:  ntelliJ IDEA is a Java integrated development environment for developing computer software. 
+
+VirtualBox: Oracle VM VirtualBox is a free and open-source hypervisor for x86 computers currently being developed by Oracle Corporation.
 
 ## First Sprint Plan
 
