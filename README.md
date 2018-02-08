@@ -26,12 +26,11 @@ We believe that, by analyzing and improving the Java 6 Enterprise Edition, we wo
 ## Risk List
 | Name | Description | Likelihood | Impact |
 ---|---|---|---
-| Risk 1 | Desc. 1 | High/Guaranteed | Effects 1 |
-| Risk 2 | Desc. 2 | Medium | Effects 2 |
-| Risk 3 | Desc. 3 | Medium | Effects 3 |
-| Risk 4 | Desc. 4 | Medium | Effects 4 |
-| Risk 5 | Desc. 5 | Low/Rare | Effects 5 |
----|---|---|---
+| Communication | Teams occassionaly, whether due to technology or human factors, fail to communicate. | High/Guaranteed | Lower quality and cohesiveness of work 1 |
+| Health | Folks have been dropping dead of the flu recently, most recently the project leader, for a week. | Medium | Lost manpower and resources to complete efforts. |
+| Requirements Change | As Dr. Hale and Dr. Mahoney work on figuring out what to require of us, what they require each Milestone (heck, the number of milestones) may change. | Medium | Unsure planning and risk of lost effort to plans that can no longer happen. |
+| Dropping | Students may drop the course for personal, educational, etc. reasons | Medium | Lost knowledge, manpower, and/or resources. |
+| Catastrophic IT failure | Laptop, server, or desktop dies, destroying copies of most recently used artifacts. | Low/Rare | Slow us down by a few days until things are back up and running. |
 
 ## Project Methodology
 To maintain successful and keep on track with the project timeline we are going to use mercurial version control system to work together, the development will remain synchronized with everyone participating in the development process. At each stage of the process there will be peer to peer code reviews and tests on everyone’s machines to make sure the output matches and no anomalies exists.
