@@ -21,7 +21,7 @@ We believe that, by analyzing and improving the Java 6 Enterprise Edition, we wo
 
 ## Project Timeline
 
-![Gantt Chart](CYBR4580-Project2501/Gantt Chart.PNG)
+[Gantt Chart](/img/GC.PNG)
 
 ## Risk List
 | Name | Description | Likelihood | Impact |
