@@ -12,9 +12,9 @@ However, the JVM GC is not perfect; though it has been optimized and improved in
 Project 2501 is tasked with analyzing the performance of Oracle's HotSpot Java Virtual Machine (the standard, as released by the owning company of Java) in regards to memory mamangement, and to determine whether or not the JVM GC adequately handles marking potentially sensitive data as free/releasable as soon as possible, and, if not, what (if any) improvements may be made (either in configuration of the JVM or programming practices of a developer creating such an application) to better protect sensitive data.
 
 ## Project Goals
-•	Develop a program to test Java 6 Enterprise Editions memory management procedures
-•	Determine the amount of time that JVM will keep application information in its memory for the Java 6 Enterprise Edition
-•	Determine if any improvements can be made to the Java 6 Enterprise Edition memory management procedures through faster memory deletion, or through handling sensitive data in a different way
+* Develop a program to test Java 6 Enterprise Editions memory management procedures
+* Determine the amount of time that JVM will keep application information in its memory for the Java 6 Enterprise Edition
+* Determine if any improvements can be made to the Java 6 Enterprise Edition memory management procedures through faster memory deletion, or through handling sensitive data in a different way
 
 ## Project Merit
 We believe that, by analyzing and improving the Java 6 Enterprise Edition, we would be able to improve data security in corporations worldwide. With how Java handles memory deletion in the sixth edition it stores data that could contain sensitive information. Since XX% of companies (Should we add some stats about how many companies are using java 6 compared to other versions?) the impact of this security flaw can be catastrophic. 
@@ -22,6 +22,14 @@ We believe that, by analyzing and improving the Java 6 Enterprise Edition, we wo
 ## Project Timeline
 
 ## Risk List
+| Name | Description | Likelihood | Impact |
+---|---|---|---
+| Risk 1 | Desc. 1 | High/Guaranteed | Effects 1 |
+| Risk 2 | Desc. 2 | Medium | Effects 2 |
+| Risk 3 | Desc. 3 | Medium | Effects 3 |
+| Risk 4 | Desc. 4 | Medium | Effects 4 |
+| Risk 5 | Desc. 5 | Low/Rare | Effects 5 |
+---|---|---|---
 
 ## Project Methodology
 To maintain successful and keep on track with the project timeline we are going to use mercurial version control system to work together, the development will remain synchronized with everyone participating in the development process. At each stage of the process there will be peer to peer code reviews and tests on everyone’s machines to make sure the output matches and no anomalies exists.
@@ -42,9 +50,6 @@ HeapAnalyzer: HeapAnalyzer allows the finding of a possible Java heap leak area 
 ntelliJ IDEA:  ntelliJ IDEA is a Java integrated development environment for developing computer software. 
 
 VirtualBox: Oracle VM VirtualBox is a free and open-source hypervisor for x86 computers currently being developed by Oracle Corporation.
-
-## First Sprint Plan
-
 
 --END--
 
