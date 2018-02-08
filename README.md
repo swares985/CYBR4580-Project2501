@@ -12,9 +12,9 @@ However, the JVM GC is not perfect; though it has been optimized and improved in
 Project 2501 is tasked with analyzing the performance of Oracle's HotSpot Java Virtual Machine (the standard, as released by the owning company of Java) in regards to memory mamangement, and to determine whether or not the JVM GC adequately handles marking potentially sensitive data as free/releasable as soon as possible, and, if not, what (if any) improvements may be made (either in configuration of the JVM or programming practices of a developer creating such an application) to better protect sensitive data.
 
 ## Project Goals
-•	Develop a program to test Java 6 Enterprise Editions memory management procedures
-•	Determine the amount of time that JVM will keep application information in its memory for the Java 6 Enterprise Edition
-•	Determine if any improvements can be made to the Java 6 Enterprise Edition memory management procedures through faster memory deletion, or through handling sensitive data in a different way
+* Develop a program to test Java 6 Enterprise Editions memory management procedures
+* Determine the amount of time that JVM will keep application information in its memory for the Java 6 Enterprise Edition
+* Determine if any improvements can be made to the Java 6 Enterprise Edition memory management procedures through faster memory deletion, or through handling sensitive data in a different way
 
 ## Project Merit
 We believe that, by analyzing and improving the Java 6 Enterprise Edition, we would be able to improve data security in corporations worldwide. With how Java handles memory deletion in the sixth edition it stores data that could contain sensitive information. Since XX% of companies (Should we add some stats about how many companies are using java 6 compared to other versions?) the impact of this security flaw can be catastrophic. 
@@ -23,12 +23,20 @@ We believe that, by analyzing and improving the Java 6 Enterprise Edition, we wo
 
 ## Risk List
 
+| Name | Description | Likelihood | Impact |
+---|---|---|---
+| Risk 1 | Desc. 1 | High/Guaranteed | Effects 1 |
+| Risk 2 | Desc. 2 | Medium | Effects 2 |
+| Risk 3 | Desc. 3 | Medium | Effects 3 |
+| Risk 4 | Desc. 4 | Medium | Effects 4 |
+| Risk 5 | Desc. 5 | Low/Rare | Effects 5 |
+---|---|---|---
+
 ## Project Methodology
 
+Because this project is specific to Java's handling of sensitive user data with regards to the JVM and it's memory management, "garbage collection," Project 2501 is focusing on the most vulnerable of usage scenarios: Java Enterprise Edition web-server applications, typically running on Enterprise systems and supporting critical Enterprise services or core  user services. To best report on real-world considerations for our research, we wanted to focus on the most-used and largest-market systems. So, our project started with background research: What was being used, and how was it being used? According to multiple surveys ^1,2,3 , 
+
 ## Necessary Resources
-
-## First Sprint Plan
-
 
 --END--
 
