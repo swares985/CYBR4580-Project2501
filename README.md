@@ -36,7 +36,13 @@ We believe that, by analyzing and improving the Java 6 Enterprise Edition, we wo
 To maintain successful and keep on track with the project timeline we are going to use mercurial version control system to work together, the development will remain synchronized with everyone participating in the development process. At each stage of the process there will be peer to peer code reviews and tests on everyone’s machines to make sure the output matches and no anomalies exists.
 
 For this project we are going to follow the methodology:
-Write a code and analyze heap at certain periods during execution. Snapshots during different times for testing and comparing the results of the development. 
+Write a code and analyze heap at certain periods during execution. Snapshots during different times for testing and comparing the results of the development.
+
+## Literature Review
+
+
+
+
 
 ## Necessary Resources
 For this project we are going to use the following open resources:
