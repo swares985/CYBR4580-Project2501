@@ -41,13 +41,17 @@ Write a code and analyze heap at certain periods during execution. Snapshots dur
 ## Literature Review
 Below are some articles and documentation we will be using for our project. We will need a solid background in how the JVM garbage collection works to produce the necessary results and tie those results into useful information that could make Java a more secure platform in the future. 
 
-Java Garbage Collection Basics – Oracle Website
+#### Java Garbage Collection Basics – Oracle Website
 This link is a tutorial that covers the basics of how Garbage collection works with the Hotspot JVM. This article will explain how the garbage collection is initiated, how the different stages work. This literature will help our group members grasp the basic of how the JVM handles garbage collection. 
 
-A simple distributed garbage collector for distributed real-time Java - Pablo Basanta-Val · Marisol García-Valls
+#### A simple distributed garbage collector for distributed real-time Java - Pablo Basanta-Val · Marisol García-Valls
 While the first article gave us a beginning tutorial on how the JVM garbage collection works. This article delves deeper into the intricacies of the garbage collection protocol. Reviewing this article will help the team develop techniques and programs to help test, and hopefully improve the JVM collection process. 
 
+#### JVM Assisted Clearing of Sensitive Data
+Charlie Gracie describes a sample API for the JVM to handle sensitive objects (As well as providing other, common-sense ways to handle sensitive data). This presentation (mentioned in the original problem set) may prove useful for finding ways to test the JVM's handling of sensitive data (for example, char[] vs. String, explicit zeroing of data, etc.).
 
+#### Live Variable Analysis
+Used as a source by the NSA, Live variable analysis is an example of a way to analyze the existence of "useful" information held within the JVM heapspace, and comparing it to the amount of total information held. This functionalty exists within Java and may be useful for determining the presence of sensitive data after it is no longer necessary. Link: [Wikipedia](https://en.wikipedia.org/wiki/Live_variable_analysis "Wikipedia: Live Variable Analysis")
 
 ## Necessary Resources
 For this project we are going to use the following open resources:
