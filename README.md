@@ -12,7 +12,7 @@ However, the JVM GC is not perfect; though it has been optimized and improved in
 Project 2501 is tasked with analyzing the performance of Oracle's HotSpot Java Virtual Machine (the standard, as released by the owning company of Java) in regards to memory mamangement, and to determine whether or not the JVM GC adequately handles marking potentially sensitive data as free/releasable as soon as possible, and, if not, what (if any) improvements may be made (either in configuration of the JVM or programming practices of a developer creating such an application) to better protect sensitive data.
 
 ## Project Goals
-* Develop a program to test Java 6 Enterprise Editions memory management procedures
+* Develop a program to test Java 7 Enterprise Editions memory management procedures
 * Determine the amount of time that JVM will keep application information in its memory for the Java 7 Enterprise Edition
 * Determine if any improvements can be made to the Java 7 Enterprise Edition memory management procedures through faster memory deletion, or through handling sensitive data in a different way
 
