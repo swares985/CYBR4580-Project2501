@@ -57,18 +57,19 @@ Charlie Gracie describes a sample API for the JVM to handle sensitive objects (A
 Used as a source by the NSA, Live variable analysis is an example of a way to analyze the existence of "useful" information held within the JVM heapspace, and comparing it to the amount of total information held. This functionalty exists within Java and may be useful for determining the presence of sensitive data after it is no longer necessary. 
 
 ## Necessary Resources
-For this project we are going to use the following open resources:
+For this project we are going to use the following software:
 
-Eclipse: The Eclipse Memory Analyzer is a fast and feature-rich Java heap analyzer that helps you find memory leaks and reduce memory consumption.
+Eclipse: The Eclipse Memory Analyzer is a fast and feature-rich Java heap analyzer that helps you find memory leaks and reduce memory consumption. It is open source, available [here](https://www.eclipse.org).
 
-NetBeans: NetBeans profiler is a fully featured Java profiling tool integrated into the NetBeans IDE. The features include CPU, memory, threads, locks and SQL queries profiling as well as basic JVM monitoring, allowing developers to be more productive in solving performance and memory issues.
+NetBeans: NetBeans profiler is a fully featured Java profiling tool integrated into the NetBeans IDE. It features CPU, memory, threads, locks and SQL profiling as well as basic JVM monitoring, allowing developers to be more productive in solving performance and memory issues. It is sponsered by Oracle and available [here](https://netbeans.org/index.html).
 
-VisualVM: The VisualVM monitors and troubleshoots applications running on Java 1.4+ from many vendors using various technologies including jvmstat, JMX, Serviceability Agent (SA) and Attach API. VisualVM perfectly fits all the requirements of application developers, system administrators, quality engineers and end users.
-HeapAnalyzer: HeapAnalyzer allows the finding of a possible Java heap leak area through its heuristic search engine and analysis of the Java heap dump in Java applications.
+VisualVM: The VisualVM (or JVisualVM) monitors and troubleshoots applications running on Java 1.4+ from many vendors using various technologies including jvmstat, JMX, Serviceability Agent (SA) and Attach API. VisualVM perfectly fits all the requirements of application developers, system administrators, quality engineers and end users. It is open source, available [here](https://visualvm.github.io).
 
-ntelliJ IDEA:  ntelliJ IDEA is a Java integrated development environment for developing computer software. 
+HeapAnalyzer: HeapAnalyzer allows the finding of a possible Java heap leak area through its heuristic search engine and analysis of the Java heap dump in Java applications. It is produced closed-source by IBM, and more information is available [here](https://www.ibm.com/developerworks/community/groups/service/html/communityview?communityUuid=4544bafe-c7a2-455f-9d43-eb866ea60091).
 
-VirtualBox: Oracle VM VirtualBox is a free and open-source hypervisor for x86 computers currently being developed by Oracle Corporation.
+IntelliJ IDEA:  ntelliJ IDEA is a Java integrated development environment for developing computer software created by JetBrains. It is closed-source software, with a free community edition available [here](https://www.jetbrains.com/idea/download/#section=windows).
+
+VirtualBox: Oracle VM VirtualBox is a free and open-source hypervisor for x86 computers currently being developed by Oracle Corporation, available [here](https://www.virtualbox.org/wiki/Downloads).
 
 --END--
 
