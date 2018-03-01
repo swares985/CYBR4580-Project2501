@@ -47,7 +47,7 @@ Below are some articles and documentation we will be using for our project. We w
 #### Java Garbage Collection Basics – Oracle Website ([Link](http://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/index.html))
 This link is a tutorial that covers the basics of how Garbage collection works with the Hotspot JVM. This article will explain how the garbage collection is initiated, how the different stages work. This literature will help our group members grasp the basic of how the JVM handles garbage collection. 
 
-#### A simple distributed garbage collector for distributed real-time Java - Pablo Basanta-Val · Marisol García-Valls
+#### A simple distributed garbage collector for distributed real-time Java - Pablo Basanta-Val · Marisol García-Valls ([Link](resources/Basanta-Val_Garcia-Valls_Simple-GC-Distributed-Systems.pdf))
 While the first article gave us a beginning tutorial on how the JVM garbage collection works. This article delves deeper into the intricacies of the garbage collection protocol. Reviewing this article will help the team develop techniques and programs to help test, and hopefully improve the JVM collection process. 
 
 #### JVM Assisted Clearing of Sensitive Data ([Link](https://www.slideshare.net/CharlieGracie/javaone-2016-jvm-assisted-sensitive-data))
