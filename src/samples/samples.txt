@@ -1,0 +1,1 @@
+Sample consist of some small tests for analyzing memory dumps from Java programs using Eclipse Memory Analyzer tools. dumps.tar.gz contains the dumps.
