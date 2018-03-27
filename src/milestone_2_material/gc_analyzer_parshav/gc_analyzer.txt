@@ -1,0 +1,36 @@
+Java garbage collection is the process by which Java programs perform automatic memory management. Java programs compile to bytecode that can be run on a Java Virtual Machine, or JVM for short. When Java programs run on the JVM, objects are created on the heap, which is a portion of memory dedicated to the program. Eventually, some objects will no longer be needed. The garbage collector finds these unused objects and deletes them to free up memory. During the period after milestone 1, we continued to study and analyze the variations of garbage collection within the jvm and analyze heap dumps and different periods to our simple test application (A command line app in java). A little bit of information about garbage collection in Java : 
+
+The heap is divided into three sections:
+
+    Young Generation: Newly created objects start in the Young Generation. The Young Generation is further subdivided into an Eden space, where all new objects start, and two Survivor spaces, where objects are moved from Eden after surviving one garbage collection cycle. When objects are garbage collected from the Young Generation, it is a minor garbage collection event.
+
+    Old Generation: Objects that are long-lived are eventually moved from the Young Generation to the Old Generation. When objects are garbage collected from the Old Generation, it is a major garbage collection event.
+
+    Permanent Generation: Metadata such as classes and methods are stored in the Permanent Generation. Classes that are no longer in use may be garbage collected from the Permanent Generation.
+
+
+JVM has 4 implementations of Garbage collection which can manually be applied depending on the structure of the application.
+
+    Serial Garbage Collector
+    	Serial garbage collector works by holding all the application threads. It is designed for the single-threaded environments. It uses just a single thread for garbage collection. The way it works by freezing all the application threads while doing garbage collection may not be suitable for a server environment. It is best suited for simple command-line programs
+
+    Parallel Garbage Collector
+    	Parallel garbage collector is also called as throughput collector. It is the default garbage collector of the JVM. Unlike serial garbage collector, this uses multiple threads for garbage collection. Similar to serial garbage collector this also freezes all the application threads while performing garbage collection.
+
+    CMS Garbage Collector
+    	In comparison with parallel garbage collector, CMS collector uses more CPU to ensure better application throughput. If we can allocate more CPU for better performance then CMS garbage collector is the preferred choice over the parallel collector.
+
+    G1 Garbage Collector
+    	G1 garbage collector is used for large heap memory areas. It separates the heap memory into regions and does collection within them in parallel. G1 also does compacts the free heap space on the go just after reclaiming the memory. But CMS garbage collector compacts the memory on stop the world (STW) situations. G1 collector prioritizes the region based on most garbage first
+
+
+Multithreading and GC
+	A running thread is considered a so called garbage collection root and is one of those things keeping stuff from being garbage collected. When the garbage collector determines whether an object is 'reachable' or not, it is always doing so using the set of garbage collector roots as reference points. We want to test out references to objects being modified in a thread, nested threads, null references from threads and later stages where an object is set to null and garbage at a later stage in the process.
+
+As part of milestone 2, we went on to create four heap dumps, one during the first input read, one after the thread was put to sleep, and during the final input read, before the value is set to null and cleaned, and after. So for each test of the GC configuration, we generated 4 heap dump files for analysis purposes, without drawing conclusions as of yet. These files are under the dumps directory, appropriately named with the gc method used. The diagram (diagramImg.png) displays the structure of our program with breakpoints and filenames. Eventually, we wish to run similar tests onto an actual running java server application, acquiring heap dumps and designated poitns and anlayzing data after.
+
+From these tests, we were able to visually see the differences of the object reference in the heap at certain times in our java app. Moreover, we noticed variations when setting object references to null and applying a variety of sleep duration for the test. None of these tests can be used as proof of concept, as these tests were run on a single machine with custom hardware configuration for the VM. From here, we are going to start testing on the java server applet and observe the variations on it.
+
+// Resources
+http://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/index.html
+https://www.cubrid.org/blog/understanding-java-garbage-collection
