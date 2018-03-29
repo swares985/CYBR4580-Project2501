@@ -46,10 +46,21 @@ Currently, the HeapTester.java application for this project has shown how easily
 
 ## Hinderances
 Some hinderances involved in researching the java interceptors really boiled down to finding the right information that pertained to our research
-(We need hinderances for the other outcome as well.
+(We need hinderances for the other outcome as well)
+
+## Diagrams
+Below are linked diagrams illustrating fundamental concepts for our project.
+
+### Diagram 1: A high-level view of Java's Memory space:
+![Mem_Chart](/img/M2/JVM_MemChart.PNG)
+
+### Diagram 2: A breakdown of how Java allocates memory on the stack/heap and deals with Strings
+In this example, the sample source code (highlighted in red) is run, and corresponds to the memory figures on the right. This sample shows the difference between Java's handling of Strings, character arrays, and pass-by-value versus pass-by-reference.
+![Part_1](/img/M2/Sample_JVM_Mem-Trace.png)
+![Part_2](/img/M2/Sample_JVM_Mem-Trace2.png)
 
 ## Ongoing Risks
-Below I have updated some of the risks and have also removed some, it seems some risks are a little more prevelent than we first anticipated.
+During the course of this project, we've discovered some risks which are a little more prevelent than we first anticipated.
 
 | Name | Description | Likelihood | Impact |
 ---|---|---|---
