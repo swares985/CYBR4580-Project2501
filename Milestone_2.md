@@ -52,7 +52,7 @@ Some hinderances involved in researching the java interceptors really boiled dow
 Below are linked diagrams illustrating fundamental concepts for our project.
 
 ### Diagram 1: A high-level view of Java's Memory space:
-![Mem_Chart](/img/M2/JVM_MemChart.PNG)
+![Mem_Chart](/img/M2/JVM_MemChart.png)
 
 ### Diagram 2: A breakdown of how Java allocates memory on the stack/heap and deals with Strings
 In this example, the sample source code (highlighted in red) is run, and corresponds to the memory figures on the right. This sample shows the difference between Java's handling of Strings, character arrays, and pass-by-value versus pass-by-reference.
