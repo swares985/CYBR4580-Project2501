@@ -23,7 +23,7 @@ Interceptors are usually used to invoke target class over the lifecycle event wi
 An enforced attempt to inject these concerns into the system may interfere with the system which may result in tangling and scattering but this disruption can be avoided by use of correct interceptors for the system. Interceptors are the best method while initializing the callback when the developers wants to call a specific interceptor method after the beans have been initiated but before the transaction towards the client. This initiation method can look over any information to configure state of the model and can also visualize the resources being used in JNDI environment. 
 Interceptor lifecycle defines the life of the interceptor classes when used in conjunction with the target class. When the target class is created, it also declares the class instances in the target class. While if the target class is using multiple classes, it also creates multiple instances within the target class instances. These instances are completely configured before @postconstruct metadata is invoked. The other metadata @Predestroy is invoked only when the target class has not been called in the system and after the class interceptors have been destroyed.
 Java Interceptors class are ideal when cross cutting concerns are treated in isolation while calling them in the form of separate class which enables the developers to access these classes again in a different bean cell environment. Initially interceptors were only assigned the EJBs. With the increased complexity in the environment and cross cutting concerns the specification of the interceptor class were improved through enabling the system to introduce new interceptor method after it has been called before. This also binds the annotation with execution of the interception in JAVA run-time environment
-While using data access field in Java environment using interceptors following is the presented example (EX 1 in Diagrams) according to metadata annotations.
+While using data access field in Java environment using interceptors following is the presented example (EX 3 in Diagrams) according to metadata annotations.
 
 
 The interceptor is initially defined to check the user permissions and define the interceptor as a public class which runs through the database to check whether the user information exist in the database or not and if it does not the return value is null otherwise it follows through the program to present the available information at class level
@@ -62,6 +62,10 @@ Below are linked diagrams illustrating fundamental concepts for our project.
 In this example, the sample source code (highlighted in red) is run, and corresponds to the memory figures on the right. This sample shows the difference between Java's handling of Strings, character arrays, and pass-by-value versus pass-by-reference.
 ![Part_1](/img/M2/Sample_JVM_Mem-Trace.png)
 ![Part_2](/img/M2/Sample_JVM_Mem-Trace2.png)
+
+### Diagram 3: Sample Inteceptor Code:
+![Part3](/img/M2/Sample_Inteceptor_Code.PNG)
+
 
 ## Ongoing Risks
 During the course of this project, we've discovered some risks which are a little more prevelent than we first anticipated.
