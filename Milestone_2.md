@@ -7,13 +7,15 @@ Below are the outcomes from the research we have completed as of today.
 ## Outcomes
 ### Outcome 1
 #### Introduction:
-In Java application development platform, interceptors are used to enable the develops to call the interceptors class which varies in terms of methods on attached target class through lifecycle event. Intercepts are known to use the metadata annotations in conjunction with the target class or as an individual interceptor class. These are required to answer the concerns of the developers over the design flow and to make sure application meets the specification provided. These concerns cannot be separated from the system flow nor they can be treated in conjunction with the system flow. It actually belongs to a system outcast which proves to be crucial to incorporate with the system parts. This defines to be an object-oriented form to handle the application system environment. 
-Java platform possesses the interceptors as component of the system which have to implement the cross-cutting concerns. Interceptors can be defined inside the target class as a method to intercept or as an interceptor class. These class comprises the methods that are called within the lifecycle events of the target class. These interceptor metadata annotations are summarized below.
-Interceptor Metadata Annotation
+In Java application development platform, interceptors are used to enable the developers to call the interceptors class which varies in terms of methods on attached target class through lifecycle event. Intercepts are known to use the metadata annotations in conjunction with the target class or as an individual interceptor class. These are required to answer the concerns of the developers over the design flow and to make sure application meets the specification provided. These concerns cannot be separated from the system flow nor they can be treated in conjunction with the system flow. It belongs to a system outcast which proves to be crucial to incorporate with the system parts. This is defined to be an object-oriented form to handle the application system environment. Java platform possesses the interceptors as component of the system which must implement the cross-cutting concerns. Interceptors can be defined inside the target class as a method to intercept or as an interceptor class. This class comprises the methods that are called within the lifecycle events of the target class. These interceptor metadata annotations are summarized below. 
+
 ##### Details
 javax.interceptor.AroundInvoke - It assigns the interceptor method.
+
 javax.annotation.PreDestroy - It assigns the method before destroying the lifecycle events
+
 javax.interceptor.AroundTimeout - It assigns the interceptor method to timeout and impose it as enterprise bean method.
+
 javax.annotation.PostConstruct - It assigns the method to intercept after construct lifecycle events.
 
 ##### Method Interceptors:
@@ -27,7 +29,9 @@ While using data access field in Java environment using interceptors following i
 The interceptor is initially defined to check the user permissions and define the interceptor as a public class which runs through the database to check whether the user information exist in the database or not and if it does not the return value is null otherwise it follows through the program to present the available information at class level
 References:
 https://docs.oracle.com/javaee/6/tutorial/doc/gkigq.html
+
 https://www.developer.com/java/understanding-interceptors-for-java-ee.html
+
 https://docs.oracle.com/javaee/6/tutorial/doc/gkigq.html
 
 ### Outcome 2
