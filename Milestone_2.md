@@ -50,7 +50,7 @@ Currently, the HeapTester.java application for this project has shown how easily
 
 ## Hinderances
 Some hinderances involved in researching the java interceptors really boiled down to finding the right information that pertained to our research
-(We need hinderances for the other outcome as well)
+
 
 ## Diagrams
 Below are linked diagrams illustrating fundamental concepts for our project.
