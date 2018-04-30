@@ -21,11 +21,17 @@ To maintain successful and keep on track with the project timeline we are going 
 
 
 Officially, this project will follow an agile/kanban mashup flow of work, where work to be completed is prioritized by the teams in communication with instructors. As time and resources become available, team members may take on tasks from a prioritized backlog and begin working, without regard to specific metrics dates (besides required Milestone deliverables). To help keep team members on track and up-to-date on team progress, the team has created and uses the GroupMe mobile application. It is available in a web client and as an application for all major phone operating systems. In addition, its simplicity avoids many causes for roadblocks due to teammember confusion when navigating more feature-heavy applications (e.g. Slack). When official or documentable correspondance is required, email will be the primary form of communication.
+
+
 Development will take place using the IDE of choice by each team member (including Eclipse, Netbeans, and IntelliJ), provided each IDE is configured to style source code files identically, and each IDE supports version control integration with Git. All written documentation (including source code) will be compiled into the Git repository this README is present on, and will be updated regularly for all members. Team members have committed to maintaining good habits for using version control systems, and will be granted Contributor status within the Github project by the project owner (Shawn Ware) as appropriate. Source files for any programs written will be kept in seperate directories from documentation files.
+
+
 A VPS solution, owned by Shawn, will be used, along with Apache Tomcat and Oracle's Java EE, to host a proof-of-concept application for research purposes. Team members have access controls in place to ensure accountability. SSH control of the VPS is held exclusively by Shawn for privacy purposes. Team members should not require SSH access to the VPS, though arrangements can be made if such situations present.
 
 
 Remote debugging of the application (really, java heap and stack analysis) will be performed through a variety of applications, including JRocket, JVisualVM, and others as researched and deemed appropriate. More information on the specifications and capabilities of each application is required before a full list can be prepared.
+
+
 Team members divide the work of each milestone deliverable based on the interest of each member to maintain a good quality of the work.
 
 
