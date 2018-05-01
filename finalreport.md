@@ -205,7 +205,7 @@ https://docs.oracle.com/javaee/6/tutorial/doc/gkigq.html
 
 ## Install Instructions
 
-###Requirements
+### Requirements
 The proof-of-concept applications developed as part of this research effort are provided in source format for ease of reference. All code was developed within the Java Platform Edition, Enterprise Edition 7 language. The JDK for Java EE, version 7 can be downloaded for most major operating systems **[here](http://www.oracle.com/technetwork/java/javaee/downloads/java-ee-sdk-7-jdk-7u21-downloads-1956231.html)**.
 
 Any text editor can be used to view the source code written as part of this project. However, an IDE provides significantly greater readability. Eclipse, a free Java EE IDE, can be downloaded **[here](https://eclipse.org/downloads/eclipse-packages/)** for most major operating systems.
