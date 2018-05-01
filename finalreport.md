@@ -44,7 +44,7 @@ import javax.security.auth.Destroyable;
 
 public class SensitiveData implements Destroyable {
 
-    /**
+	/**
 	 * The unique ID of this object instance.
 	 */
 	private int userId;
@@ -61,7 +61,7 @@ public class SensitiveData implements Destroyable {
 	
 	/**
 	 * A boolean required for implementing the {@link Destroyable} interface.
-	 * Holds the current status of this object - true if {@link destroy} has
+	 * Holds the current status of this object - true if {@link #destroy() destroy} has
 	 * been called on this object instance, false otherwise.
 	 */
 	private boolean isDestroyed;
@@ -78,8 +78,8 @@ public class SensitiveData implements Destroyable {
 	
 	/**
 	 * Method for safely checking whether or not this object has been destroyed.
-	 * All calls to {@link #destroy()} should be preceeded by a call to this
-	 * method to avoid throwing an {@link IllegalStateException}.
+	 * All calls to {@link #destroy() destroy} should be preceeded by a call to this
+	 * method to avoid throwing an {@link java.lang.IllegalStateException IllegalStateException}.
 	 *
 	 * @return	a boolean representing whether or not this object has been destroyed.
 	 */
@@ -90,7 +90,7 @@ public class SensitiveData implements Destroyable {
 	
 	/**
 	 * Destroys and safely dereferences all sensitive information within
-	 * this {@link SensitiveData} object instance. This method must be called
+	 * this {@link SensitiveData SensitiveData} object instance. This method must be called
 	 * prior to dereferencing this object to better prevent the existence of
 	 * memory artifacts containing sensitive information.
 	 *
