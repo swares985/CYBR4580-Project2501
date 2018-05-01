@@ -15,7 +15,7 @@ Officially, this project will follow an agile/kanban mashup flow of work, where 
 
 Development will take place using the IDE of choice by each team member (including Eclipse and IntelliJ), provided each IDE is configured to style source code files identically, and each IDE supports version control integration with Git. All written documentation (including source code) will be compiled into the Git repository. Team members have committed to maintaining good habits for using version control systems, and will be granted Contributor status within the Github project by the project workspace's owner as appropriate. Source files for any programs written will be kept in seperate directories from documentation files. Team members divide the work of each milestone deliverable based on the interest of each member to maintain a good quality of the work.
 
-###Time-permitting project methodology.
+### Time-permitting project methodology.
 A VPS solution, owned by Shawn, will be used, along with Apache Tomcat and Oracle's Java EE, to host a proof-of-concept application for research purposes, time and resource permitting. Team members have access controls in place to ensure accountability. SSH control of the VPS is held exclusively by Shawn for privacy purposes.
 
 Remote debugging of the application (java heap and stack analysis) will be performed through a variety of applications, including JRocket, JVisualVM, and others as researched and deemed appropriate. More information on the specifications and capabilities of each application is required before a full list can be prepared.
