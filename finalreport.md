@@ -211,3 +211,38 @@ The proof-of-concept applications developed as part of this research effort are 
 Any text editor can be used to view the source code written as part of this project. However, an IDE provides significantly greater readability. Eclipse, a free Java EE IDE, can be downloaded **[here](https://eclipse.org/downloads/eclipse-packages/)** for most major operating systems.
 
 ### Getting started
+
+Althought testing and development for the project was done primarily on a shared, unmodeified VM, this was to ensure integrity between results from various findings. Any of the projects and samples can be loaded onto a machine with the appropriate Java version and a text editor or IDE installed to interact more easily with the code.
+For our project, we primarily used the Intellij Idea Community Edition IDE. Therefore attached reference links will corelate to Intellij's solutions only.
+All the samples and projects need not require any external tools for running and testing.
+
+* git clone [insert sample or project git link]
+* Open intellij and select Open Project.
+* Locate to directory cloned using git.
+
+Intellij will load up the project appropriately, each program is designed to simply run the main class for execution.
+Learn on how to use breakpoints **[here](https://www.jetbrains.com/help/idea/creating-line-breakpoints.html)**, and how to capture memory dumps **[here](https://www.jetbrains.com/help/idea/debug-tool-window-dump.html)**.
+##### Samples
+Samples are present within the src directory, here is a list of samples created for Milestones 2 and 3.
+**[GC Analyzer Sample](https://github.com/swares985/CYBR4580-Project2501/tree/master/src/milestone_2_material/gc_analyzer_parshav)**
+**[Heap Sample #1](https://github.com/swares985/CYBR4580-Project2501/tree/master/src/milestone_2_material/heap_testers_austin)**
+**[Heap Sample #2](https://github.com/swares985/CYBR4580-Project2501/tree/master/src/milestone_3_material/Samples%20Continued/smallHeapTest)**
+**[Heap Sample #4](https://github.com/swares985/CYBR4580-Project2501/tree/master/src/milestone_3_material/Samples%20Continued/loader)**
+**[Interceptor Example](https://github.com/swares985/CYBR4580-Project2501/tree/master/src/milestone_3_material/Samples%20Continued/IntercEg)**
+
+##### Project Instance
+Project Instance is a culmination of the samples, restructured for easy understanding, and the primary project used to draw conclusions for this report. The project structure can be understood from a chart diagram in the img directory. Instance consists of multiple GC roots, including Strings, Objects, Nodes, LinkedLists, Heap Intensive tasks such as recursion, infinite read and write, and runnables within threads.
+**[Here](https://github.com/swares985/CYBR4580-Project2501/tree/master/src/milestone_3_material/Instance%20One)** is the link to the project. Similar to the samples, this can be cloned from the github repository and run without external libraries or tools. 
+
+##### Analyzer Tools
+Initially, the Eclipse Memory Analyzer Tool was used to generate heap dumps and analyze the heap at any point. This tool can be downloaded for free **[here](https://www.eclipse.org/mat/downloads.php)**.
+Once the program launches, 
+* Make sure the Java program(Instance or a Sample) is already running.
+* You may need to find the PID(Process ID) of the java program, else, the package name should be able to identify the java application. The package name for all the projects within this report are *com.twofivezeroone*
+* Generate the heap dump and observe the various memory references.
+* 
+However, eventually the team decided to continue and use in built Intellij tools for memory analysis and debugging. 
+The JVM Debugger plugin from Intellij is a useful tool as well to analyze heap for a JVM operation, that can be found out about **[here](https://blog.jetbrains.com/idea/2016/08/jvm-debugger-memory-view-for-intellij-idea/)**. To install a plugin in Intellij, 
+* Click on File -> Preferences -> Plugins -> Install Plugins
+
+Search for the desired plugin and install. Multiple plugins for heap analysis can be found for Intellij.
