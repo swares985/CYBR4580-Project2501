@@ -1,6 +1,8 @@
 # Project2501
 ## Executive Summary
-(overview of project, reuse from milestone 1, update if scope changed)
+Project 2501 is tasked with analyzing the performance of Oracle's HotSpot Java Virtual Machine (the standard, as released by the owning company of Java) in regards to memory mamangement, and to determine whether or not the JVM GC adequately handles marking potentially sensitive data as free/releasable as soon as possible, and, if not, what (if any) improvements may be made (either in configuration of the JVM or programming practices of a developer creating such an application) to better protect sensitive data. We believe that, by analyzing and improving the Java 7 Enterprise Edition, we would be able to improve data security in corporations worldwide. 
+
+To that end, this team has researched interceptors at all levels, as well as various security interfaces. Additionally, we've researched and are in the process of implementing well-documented methods for using built-in functionality of the JVM to better protect sensitive data after its use by a Java application.
 
 ## Project Goals
 This project began with the following goals:
